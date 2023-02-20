@@ -1,0 +1,30 @@
+{% extends 'layout.html' %} {% block main %}
+<h1>hello welcome to our calculator</h1>
+<div class="row">
+  <form class="col s12" method="POST" action="/calculator">
+    <div class="row">
+      <div class="input-field col s6">
+        <input name="first_num" id="first_num" type="number" class="validate" />
+        <label for="first_num">First number</label>
+      </div>
+      <div class="input-field col s6">
+        <input
+          name="second_num"
+          id="second_num"
+          type="number"
+          class="validate"
+        />
+        <label for="second_num">second number</label>
+      </div>
+    </div>
+
+    <button
+      class="waves-effect waves-light btn"
+      type="submit
+    "
+    >
+      send
+    </button>
+  </form>
+</div>
+{% endblock %}
